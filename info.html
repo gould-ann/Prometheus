@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>The Prometheus Network</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	</head>
+	<body id="patient-login">
+
+		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+		    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		  	  <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">The Prometheus Network</a>
+    	</nav>
+    	<br>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<!--Login Form (Patient)-->
+		<!--Lets try to make this grey and the doctors one blue-->
+		<div class="container">
+			<div class="text-center">
+				<form id="form-signin" class="text-left">
+					<h4>Patient Information Authorization</h4>
+					<div class="main-login-form">
+						<div class="login-group">
+							<div class="form-group">
+								<input id="lg_username" class="form-control" name="username" placeholder="Patient Code" type="text"></input>
+							</div>
+							<div class="form-group">
+								<input id="lg_username" class="form-control" name="username" placeholder="Doctor Code" type="text"></input>
+							</div>
+						</div>
+					</div>
+					<a href="patientInfo.html" class="btn btn-success btn-lg float-right" role="button" aria-disabled="false">Get Patient Information</a>
+				</form>
+				<br><br><br>
+			</div>
+		</div>
+		<div class="container" id="info">
+			<h4 id="name">Patient's Information:</h4>
+			<p>Medical History Here</p>
+		</div>
+	</body>
+</html>
