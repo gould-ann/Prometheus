@@ -7,8 +7,9 @@
 		<script src="https://cdn.rawgit.com/CryptoStore/crypto-js/3.1.2/build/rollups/aes.js"></script>
 		<script src="https://cdn.rawgit.com/CryptoStore/crypto-js/3.1.2/build/components/mode-cfb-min.js"></script>
 		<script src="decrypt.js"></script>
+		<script src="data.js"></script>
 	</head>
-	<body id="patient-login">
+	<body id="patient-login" style="background-color: grey">
 
 		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 		    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,9 +21,9 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		<!--Login Form (Patient)-->
 		<!--Lets try to make this grey and the doctors one blue-->
-		<div class="container">
+		<div class="container col-md-6">
 			<div class="text-center">
-				<form id="form-signin" class="text-left">
+				<form id="form-signin" class="text-left" align="center">
 					<h4>Patient Information Authorization</h4>
 					<div class="main-login-form">
 						<div class="login-group">
@@ -41,7 +42,7 @@
 		</div>
 		<div class="container" id="info">
 			<h4 id="name">Patient's Information:</h4>
-			<p>Medical History Here</p>
+			<p id="medical_info">Medical History Here</p>
 		</div>
 	</body>
 </html>
