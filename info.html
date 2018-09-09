@@ -8,7 +8,7 @@
 		<script src="https://cdn.rawgit.com/CryptoStore/crypto-js/3.1.2/build/components/mode-cfb-min.js"></script>
 		<script src="decrypt.js"></script>
 	</head>
-	<body id="patient-login" style="background-color: grey">
+	<body id="patient-login">
 
 		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 		    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,10 +17,7 @@
 		    <a class="navbar-brand" href="#">The Prometheus Network</a>
     	</nav>
     	<br>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<!--Login Form (Patient)-->
-		<!--Lets try to make this grey and the doctors one blue-->
-		<div class="container col-md-6">
+		<div class="container col-md-8 rounded">
 			<div class="text-center">
 				<form id="form-signin" class="text-left" align="center">
 					<h4>Patient Information Authorization</h4>
@@ -34,14 +31,17 @@
 							</div>
 						</div>
 					</div>
-					<a href="patientInfo.html" class="btn btn-success btn-lg float-right" role="button" aria-disabled="false">Get Patient Information</a>
+					<a href="patientInfo.html" class="btn btn-info btn-lg float-right" role="button" aria-disabled="false">Get Patient Information</a>
 				</form>
-				<br><br><br>
 			</div>
+		<br><br><br>
 		</div>
-		<div class="container" id="info">
-			<h4 id="name">Patient's Information:</h4>
-			<p id="medical_info">Medical History Here</p>
+		<br><br>
+		<div class="container rounded" style="background-color: #d3d3d3" id="info">
+			<div class="row" style="border-radius: 15px">
+				<h4 id="name">Patient's Information:</h4>
+			</div>
+			<p id="medical_info"></p>
 		</div>
 		<script src="data.js"></script>
 	</body>
